@@ -2,15 +2,18 @@
 
 .br-navbar {
 
+    .container {
+        padding : 0 !important
+    }
     .navbar{
         background-color: transparent;
         border-width: 0;
         margin-bottom: 0 !important;
         height: 102px;
-        -webkit-transition: background-color 0.3s, height 0.3s;
-        transition: background-color 0.3s, height 0.3s;
-
-        &.collapsed{
+        -webkit-transition: background-color 0.1s, height 0.3s;
+        transition: background-color 0.1s, height 0.3s;
+        
+        &.navWhite{
             background-color: white;
         }
 
@@ -124,7 +127,9 @@
 
         .navbar-brand {
             height: auto;
-            padding: 27px 15px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            margin-left: 15px;
             -webkit-transition: padding 0.3s;
             transition: padding 0.3s;
             img {
@@ -149,10 +154,14 @@
             background-color: #fff;
             height: 60px;
             .navbar-brand {
-                padding: 0px 15px;
+                margin: 0px !important;
                 img {
                     height: 30px;
                 }
+            }
+            .navbar-toggler{
+                margin-top :0;
+                margin-bottom : 0;
             }
         }
     }
@@ -163,8 +172,12 @@
 
 
 @media (min-width:800px){
+    .navbar-brand{
+        margin: 0px !important;
+    }
     .br-navbar-mini {
 		.navbar {
+            
 			.navbar-nav {
 				>li {
 					>a {

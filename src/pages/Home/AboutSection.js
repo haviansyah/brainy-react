@@ -52,7 +52,7 @@ export default function AboutSection(){
                             {
                                 servicesItems.map((x,i)=>
                                     <div key={i} className={"col-6 col-md-4 "} >
-                                        <ReactWOW   animation="bounceInUp" delay={(0.08*i).toString()+"s"} >
+                                        <ReactWOW   animation="bounceInUp" delay={(0.08*i).toString()+"s"} overflow >
                                                 <div className="card">
                                                     <div className="item-service">
                                                         <img src={"images/"+x.icon} alt={x.name}/>

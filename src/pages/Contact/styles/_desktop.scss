@@ -1,0 +1,37 @@
+@media (min-width : 800px){
+    .contact-page{
+        padding-top: 150px;
+        position :relative;
+
+        .contact-image{
+            padding-right: 0px !important;
+            &-desktop{
+                position: absolute;
+                width: 40%;
+                right : 0;
+                top : 0;
+                bottom : 0;
+                margin : auto; 
+                display: block;	
+            }
+            &-mobile{
+                display: none;
+            }
+            &-splatter{
+                position: absolute;
+                right : 0;
+            }
+        }
+        .form-side{
+            padding : 0;
+            // padding-left : 9em;
+        }
+        .btn-kirim{
+            background: #262939;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 2px;
+            float: right;
+        }
+    }
+}
