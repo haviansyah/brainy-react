@@ -8,12 +8,12 @@ import './index.scss'
 
 
 import {
-  Route,
   BrowserRouter as Router,
   Switch,
 } from 'react-router-dom'
 import route from './pages/route'
 import NotFound from './error'
+import ScrollTopRoute from './component/ScrollTopRoute';
 
 
 function App() {
@@ -47,9 +47,9 @@ function App() {
     <Router>
         <Switch>
         {
-            route.map(x=><Route key={x.name} exact={x.exact} path={x.to} component={x.component} />)
+            route.map(x=><ScrollTopRoute key={x.name} exact={x.exact} path={x.to} component={x.component} />)
         }
-          <Route component={NotFound} />
+        <ScrollTopRoute component={NotFound} />
         </Switch>
     </Router>
   )

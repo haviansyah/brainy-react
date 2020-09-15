@@ -25,6 +25,7 @@ export default function Header(){
         setTimeout(() => {
             setFlag(true);
         }, 500);
+        console.log(e.currentTarget.classList.contains("collapsed"));
     },[navWhite])
     return (
         <header className={"br-navbar " + (mini ? "br-navbar-mini" : "") }>
