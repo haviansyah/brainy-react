@@ -9,8 +9,8 @@
         background-color: transparent;
         border-width: 0;
         margin-bottom: 0 !important;
-        -webkit-transition: background-color 0.3s, height 0.3s, box-shadow 0.3;
-        transition: background-color 0.3s, height 0.3s, box-shadow 0.3;
+        -webkit-transition: all .4s;
+        transition: all .4s;
         
         &.navWhite{
             background-color: white;
@@ -177,12 +177,11 @@
     }
     .br-navbar-mini {
 		.navbar {
-            
 			.navbar-nav {
 				>li {
 					>a {
-						padding-top: 20px;
-						padding-bottom: 20px;
+						padding-top: 8px;
+						padding-bottom: 8px;
 					}
 				}
 			}

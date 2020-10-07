@@ -1,7 +1,9 @@
+@import '../../../style/colors.scss';
+
 .contact-page{
 	padding-top : 84px;
 	padding-bottom: 100px;
-	background-color: #f0f0f0;
+	// background-color: #f0f0f0;
 
 	.container{
 		padding : 0px;
@@ -68,9 +70,9 @@
 	}
 	.btn-kirim{
         margin-top : 20px;
-		background: #f0f0f0;
+		background: $color-darkShade;
 		box-shadow: 8px 8px 20px 0 rgba(0,0,0,0.05),  -8px -8px 20px 0 rgba(255, 255, 255, 0.7) ;
-        color: #262939;
+        color: #ffff;
         border-radius: 50px;
 		font-weight: 700;
 		padding: 8px 50px;

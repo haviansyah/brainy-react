@@ -1,10 +1,13 @@
 import React from 'react';
 import PageTemplate from '../../component/Template/PageTemplate';
-
 import './styles/contact.scss';
 import ReactWOW  from 'react-wow';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function ContactPage(){
+    function onChange(value) {
+        console.log("Captcha value:", value)
+    }
     return (
         <PageTemplate>
             <section className="contact-page">
@@ -34,6 +37,7 @@ function ContactPage(){
                                     <label htmlFor="pesan">Pesan</label>
                                     <textarea className="form-control" id="pesan" name="pesan" rows="3"></textarea>
                                 </div>
+                                <ReCAPTCHA sitekey="6LdAsNQZAAAAAFMFXy7ZWLJv5hfaZbR4GxVFUYcj" onChange={onChange} />
                                 <button type="submit" className="btn btn-kirim">Kirim</button>
                             </form>
                         </div>

@@ -5,6 +5,7 @@ import HeroBanner from './HeroBanner';
 import OurClient from './OurClient';
 import AboutSection from './AboutSection';
 import PageTemplate from '../../component/Template/PageTemplate/index';
+import Portfolio from './PortfolioSection';
 export default function HomePage(){
 
 
@@ -13,6 +14,7 @@ export default function HomePage(){
             <HeroBanner/> 
             <OurClient/>
             <AboutSection/>
+            <Portfolio/>
         </PageTemplate>
     )
 }

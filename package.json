@@ -15,10 +15,12 @@
     "react": "^16.13.1",
     "react-animation": "^1.2.2",
     "react-dom": "^16.13.1",
+    "react-google-recaptcha": "^2.1.0",
     "react-lazyload": "^3.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-wow": "^1.0.0"
+    "react-wow": "^1.0.0",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

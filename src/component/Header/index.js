@@ -5,7 +5,6 @@ import "./header.scss"
 import route from '../../pages/route'
 
 export default function Header(){
-
     const [mini, setMini] = useState(false);
     const [navWhite, setNavWhite] = useState(false);
     const [flag, setFlag] = useState(true)
@@ -13,7 +12,7 @@ export default function Header(){
     useEffect(()=>{
         function onScroll(ev){
             const pageOffset = window.pageYOffset;
-            setMini(pageOffset > 0);
+            setMini(pageOffset > 100);
         }
         window.onscroll = onScroll;
         
